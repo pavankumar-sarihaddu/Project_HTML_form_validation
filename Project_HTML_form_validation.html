@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>REGISTRATION FORM</title>
+<head>
+<style>
+div {
+box-sizing:border-box;
+width:100%;
+border:1px solid black;
+float:left;
+align-content:center;
+align-item:center;
+}
+form {
+margin:0 auto;
+width:600px;
+}
+</style>
+</head>
+</head>
+<div style="background-color:###;">
+<h1 style="text-align:center;text-green;background-primary;"><u>REGISTRATION FORM</u></h1>
+<form name="regForm"action=""onsubmit="return GEEKFORGEEKS()"method="post">
+
+<p>Name:<input type="text"size="65"name="Name" /></p>
+<br />
+<p>Address:<input type="text"size="65" name="Address" /></p>
+<br />
+<p>Email:<input type="email"size="65"name="Email" /></p>
+<br />
+
+<p>Password:<input type="password"size="65"name="Password" /></p>
+<br />
+
+<p>Telephone:<input type="tel"size="10"name="Mobile" /></p>
+<br />
+<p>
+Select Your Course:
+<select type="text" value"" name="Subject">
+<option>B- Tech</option>
+<option>M-Tech</option>
+<option>B.com</option>
+<option>MCA</option>
+<option>B- Tech</option>
+<option>M-Tech</option>
+<option>B.com</option>
+<option>MCA</option>
+<option>B- Tech</option>
+<option>M-Tech</option>
+<option>B.com</option>
+<option>MCA</option>
+</select>
+</p>
+<br />
+<br />
+<p>Comments:<br /><textarea cols="55"name="Comments"></textarea></p>
+<p>
+<input type="submit"value="Submit"name="submit" />
+<input type="reset"value="reset"name="reset" />
+</p>
+</form>
+</div>
+<script>
+
+function GEEKFORGEEKS() {
+var name = document.forms["regForm"]["Name"];
+var Email = document.forms["regForm"]["Email"];
+var Telephone = document.forms["regForm"]["Mobile"];
+var Password = document.forms["regForm"]["Password"];
+var Address = document.forms["regForm"]["Address"];
+var what = document.forms["regForm"]["Subject"];
+
+if (name.value == "") {
+ window.alert ("Please enter your name.");
+ name.focus();
+ return false;
+ }
+ if (Address.value =="") {
+ window.alert("Please enter your Address.");
+ Address.focus();
+ return false;
+}
+if (Email.value == "") {
+window.alert("Please enter your Email ID.");
+Email.focus();
+return false;
+}
+if (Password.value == "") {
+window.alert ("Please enter your Password Details.");
+Password.focus();
+return false;
+}
+if (Telephone.value == "") {
+window.alert ("Please enter your Telephone Number.");
+Telephone.focus();
+return false;
+}
+if (what.selectedIndex <1) {
+alert("Please enter your cource.");
+what.focus();
+return false;
+}
+return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
